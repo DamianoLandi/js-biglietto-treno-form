@@ -39,12 +39,35 @@
 
     <div id="results">
         <h3>Dettaglio Passeggeri</h3>
-        <h4>Nome Passeggero: <span id="name-display"></span></h4>
-        <h4>Fascia di Età: <span id="age-display"></span></h4>
-        <h4>Sconto Applicato: <span id="discount"></span></h4>
-        <h4>Carrozza: <span id="car-display"></span></h4>
-        <h4>Codice del Treno: <span id="code-display"></span></h4>
-        <h4>Prezzo del Biglietto: <span id="price-display"></span> &euro;</h4>
+        <div id="results-container">
+            <div class="result-container">
+                <p>Nome Passeggero </p>
+                <p id="name-display"></p>
+            </div>
+            <div class="result-container">
+                <p>Fascia di Età </p>
+                <p id="age-display"></p>
+            </div>
+            <div class="result-container">
+                <p>Sconto Applicato </p>
+                <p id="discount"></p>
+            </div>
+            <div class="result-container">
+                <p>Carrozza </p>
+                <p id="car-display"></p>
+            </div>
+            <div class="result-container">
+                <p>Codice del Treno </p>
+                <p id="code-display"></p>
+            </div>
+            <div class="result-container">
+                <p>Prezzo del Biglietto </p>
+                <div id="euro-span-container">
+                    <span id="price-display"></span>
+                    <span> &euro;</span>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="./js/script.js"></script>
 </body> 
