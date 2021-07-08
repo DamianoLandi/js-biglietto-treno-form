@@ -59,6 +59,17 @@ generate.addEventListener("click", function(){
     codeDisplay.innerHTML = Math.floor((Math.random() * 9999) + 90000);
 
     priceToFixed.innerHTML = price.toFixed(2);
-
     
+});
+
+//Reset degli Input
+
+reset.addEventListener("click", function(){
+    
+    nameInput.value = "";
+
+    kmsInput.value = "";
+
+    ageInput.value = "Minorenne";
+
 });

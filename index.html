@@ -8,36 +8,43 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Inserisci i tuoi dati</h1>
+    <h2>Inserisci i tuoi dati</h2>
     <div id="form-container">
-        <div class="input-container">
-            <label for="name">Inserisci il tuo Nome</label>
-            <input type="text" name="name" id="name">
+
+        <div id="inputs-container">
+            <div class="input-container">
+                <label for="name">Inserisci il tuo Nome</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="input-container">
+                <label for="kms">Quanti km vuoi percorrere?</label>
+                <input type="number" name="kms" id="kms">
+            </div>
+            <div class="input-container">
+                <label for="age">Inserisci la tua età</label>
+                <select name="age" id="age">
+                    <option value="Minorenne">Minorenne</option>
+                    <option value="Maggiorenne">Maggiorenne</option>
+                    <option value="Over-65">Over 65</option>
+                </select>
+            </div>
         </div>
-        <div class="input-container">
-            <label for="kms">Quanti km vuoi percorrere?</label>
-            <input type="number" name="kms" id="kms">
+        <div id="buttons">
+            <button id="generate">Genera Biglietto</button>
+            <button id="reset">Reset</button>
         </div>
-        <div class="input-container">
-            <label for="age">Inserisci la tua età</label>
-            <select name="age" id="age">
-                <option value="Minorenne">Minorenne</option>
-                <option value="Maggiorenne">Maggiorenne</option>
-                <option value="Over-65">Over 65</option>
-            </select>
-        </div>
-        <button id="generate">Genera Biglietto</button>
-        <button id="reset">Reset
-        </button>
     </div>
 
+    <h2 id="ticket">Il tuo Biglietto</h2>
+
     <div id="results">
-        <h2>Nome Passeggero: <span id="name-display"></span></h2>
-        <h2>Fascia di Età: <span id="age-display"></span></h2>
-        <h2>Sconto Applicato: <span id="discount"></span></h2>
-        <h2>Carrozza: <span id="car-display"></span></h2>
-        <h2>Codice del Treno: <span id="code-display"></span></h2>
-        <h2>Prezzo del Biglietto: <span id="price-display"></span> &euro;</h2>
+        <h3>Dettaglio Passeggeri</h3>
+        <h4>Nome Passeggero: <span id="name-display"></span></h4>
+        <h4>Fascia di Età: <span id="age-display"></span></h4>
+        <h4>Sconto Applicato: <span id="discount"></span></h4>
+        <h4>Carrozza: <span id="car-display"></span></h4>
+        <h4>Codice del Treno: <span id="code-display"></span></h4>
+        <h4>Prezzo del Biglietto: <span id="price-display"></span> &euro;</h4>
     </div>
     <script src="./js/script.js"></script>
 </body> 
